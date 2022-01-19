@@ -29,7 +29,6 @@ class AddRecipeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-
         //parse xml
         val pullParserFactory: XmlPullParserFactory
         try {
@@ -50,7 +49,7 @@ class AddRecipeActivity : AppCompatActivity() {
 
             binding.spRecipeTypes.onItemSelectedListener = object :
 
-                AdapterView.OnItemSelectedListener {
+                    AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                     selection = recipeTypeList[p2]
                     Toast.makeText(this@AddRecipeActivity, selection + " selected", Toast.LENGTH_SHORT).show()
@@ -74,7 +73,7 @@ class AddRecipeActivity : AppCompatActivity() {
             val addSteps = binding.etRecipeSteps.text.toString()
             val addType = selection.toString()
 
-            if (binding.etRecipeName.text.isNotEmpty() && binding.etRecipeIngredients.text.isNotEmpty()&& binding.etRecipeSteps.text.isNotEmpty()) {
+            if (binding.etRecipeName.text.isNotEmpty() && binding.etRecipeIngredients.text.isNotEmpty() && binding.etRecipeSteps.text.isNotEmpty()) {
 
                 database = FirebaseDatabase.getInstance().getReference("Recipe").child(addType)
                 val recipe = Recipe(addName, addIngredients, addSteps, addType)
