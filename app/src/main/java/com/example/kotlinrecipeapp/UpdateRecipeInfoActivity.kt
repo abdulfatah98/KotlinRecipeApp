@@ -43,7 +43,8 @@ class UpdateRecipeInfoActivity : AppCompatActivity() {
                 val recipe = mapOf<String, String>(
                     "recipeName" to editedName,
                     "recipeIngredients" to editedIngredients,
-                    "recipeSteps" to editedSteps
+                    "recipeSteps" to editedSteps,
+                    "reciptType" to type
                 )
 
                 database.child(editedName).updateChildren(recipe).addOnSuccessListener {

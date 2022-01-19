@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                     selection = recipeTypeList[p2]
-                    Toast.makeText(this@MainActivity, selection, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity, selection + " selected", Toast.LENGTH_SHORT).show()
                     recipeRecyclerView = binding.recyclerView
                     binding.recyclerView.apply {
 
