@@ -28,7 +28,6 @@ class AddRecipeActivity : AppCompatActivity() {
         binding = ActivityAddRecipeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         //parse xml
         val pullParserFactory: XmlPullParserFactory
         try {
