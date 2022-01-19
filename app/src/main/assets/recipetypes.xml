@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <type id="1">
+        <name>All</name>
+    </type>
+    <type id="2">
+        <name>Breakfast</name>
+    </type>
+    <type id="3">
+        <name>Lunch</name>
+    </type>
+    <type id="4">
+        <name>Dinner</name>
+    </type>
+    <type id="5">
+        <name>Dessert</name>
+    </type>
+    <type id="6">
+        <name>Main Dish</name>
+    </type>
+</recipe>
